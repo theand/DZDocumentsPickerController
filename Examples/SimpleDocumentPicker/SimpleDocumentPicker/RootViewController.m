@@ -25,7 +25,7 @@
     docPickerController = [[DZDocumentsPickerController alloc] init];
     docPickerController.includePhotoLibrary = YES;
     docPickerController.documentType = DocumentTypeImages;
-    docPickerController.allowEditing = NO;
+    docPickerController.allowEditing = YES;
     docPickerController.delegate = self;
     docPickerController.availableServices = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:ServiceTypeDropbox],[NSNumber numberWithInt:ServiceTypeCloudApp],nil];
     

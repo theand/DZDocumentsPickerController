@@ -78,6 +78,8 @@ NSString *const ServicesTypeArr[] = {@"Dropbox",@"CloudApp",@"iCloud",@"GoogleDr
 
 - (void)loginWithInfo:(NSDictionary *)userInfo
 {   
+    NSLog(@"%s",__FUNCTION__);
+    
     if (userInfo)
     {
         if (self.currentService == ServiceTypeCloudApp)

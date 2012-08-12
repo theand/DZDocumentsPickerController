@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F24FF4F15D72AB400602AB4 /* NSArray+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF3B15D72AB400602AB4 /* NSArray+DZEN.m */; };
+		4F24FF5015D72AB400602AB4 /* NSDate+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF3D15D72AB400602AB4 /* NSDate+DZEN.m */; };
+		4F24FF5115D72AB400602AB4 /* NSMutableArray+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF3F15D72AB400602AB4 /* NSMutableArray+DZEN.m */; };
+		4F24FF5215D72AB400602AB4 /* NSObject+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4115D72AB400602AB4 /* NSObject+DZEN.m */; };
+		4F24FF5315D72AB400602AB4 /* NSString+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4315D72AB400602AB4 /* NSString+DZEN.m */; };
+		4F24FF5415D72AB400602AB4 /* UIColor+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4515D72AB400602AB4 /* UIColor+DZEN.m */; };
+		4F24FF5515D72AB400602AB4 /* UIImage+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4715D72AB400602AB4 /* UIImage+DZEN.m */; };
+		4F24FF5615D72AB400602AB4 /* UITableView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4915D72AB400602AB4 /* UITableView+DZEN.m */; };
+		4F24FF5715D72AB400602AB4 /* UIView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4B15D72AB400602AB4 /* UIView+DZEN.m */; };
+		4F24FF5815D72AB400602AB4 /* UIWebView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24FF4D15D72AB400602AB4 /* UIWebView+DZEN.m */; };
 		F504CB51156E9B9A002842A1 /* CLAPIDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F504C896156E9B99002842A1 /* CLAPIDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F504CB52156E9B9A002842A1 /* CLAPISerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F504C898156E9B99002842A1 /* CLAPISerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F504CB53156E9B9A002842A1 /* NSMutableURLRequest+NPPOSTBody.m in Sources */ = {isa = PBXBuildFile; fileRef = F504C89B156E9B99002842A1 /* NSMutableURLRequest+NPPOSTBody.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -84,16 +94,6 @@
 		F56BAE521550B5AB0058B1D2 /* logo_skydrive.png in Resources */ = {isa = PBXBuildFile; fileRef = F56BAE501550B5AB0058B1D2 /* logo_skydrive.png */; };
 		F56BAE531550B5AB0058B1D2 /* logo_skydrive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F56BAE511550B5AB0058B1D2 /* logo_skydrive@2x.png */; };
 		F5C83B2B154EED8B00456D08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C83B29154EED7A00456D08 /* SystemConfiguration.framework */; };
-		F5D8FCBA156E9A6F0007D484 /* NSArray+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCA6156E9A6F0007D484 /* NSArray+DZEN.m */; };
-		F5D8FCBB156E9A6F0007D484 /* NSDate+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCA8156E9A6F0007D484 /* NSDate+DZEN.m */; };
-		F5D8FCBC156E9A6F0007D484 /* NSMutableArray+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCAA156E9A6F0007D484 /* NSMutableArray+DZEN.m */; };
-		F5D8FCBD156E9A6F0007D484 /* NSObject+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCAC156E9A6F0007D484 /* NSObject+DZEN.m */; };
-		F5D8FCBE156E9A6F0007D484 /* NSString+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCAE156E9A6F0007D484 /* NSString+DZEN.m */; };
-		F5D8FCBF156E9A6F0007D484 /* UIColor+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCB0156E9A6F0007D484 /* UIColor+DZEN.m */; };
-		F5D8FCC0156E9A6F0007D484 /* UIImage+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCB2156E9A6F0007D484 /* UIImage+DZEN.m */; };
-		F5D8FCC1156E9A6F0007D484 /* UITableView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCB4156E9A6F0007D484 /* UITableView+DZEN.m */; };
-		F5D8FCC2156E9A6F0007D484 /* UIView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCB6156E9A6F0007D484 /* UIView+DZEN.m */; };
-		F5D8FCC3156E9A6F0007D484 /* UIWebView+DZEN.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCB8156E9A6F0007D484 /* UIWebView+DZEN.m */; };
 		F5D8FCC6156E9A8A0007D484 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8FCC5156E9A8A0007D484 /* Reachability.m */; };
 		F5E1B434153D071400B46440 /* DZAlertCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E1B3F6153D002100B46440 /* DZAlertCenter.m */; };
 		F5E1B439153D074D00B46440 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E1B437153D073600B46440 /* CFNetwork.framework */; };
@@ -114,6 +114,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F24FF3915D72AB400602AB4 /* DZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCategories.h; sourceTree = "<group>"; };
+		4F24FF3A15D72AB400602AB4 /* NSArray+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF3B15D72AB400602AB4 /* NSArray+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF3C15D72AB400602AB4 /* NSDate+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF3D15D72AB400602AB4 /* NSDate+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF3E15D72AB400602AB4 /* NSMutableArray+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF3F15D72AB400602AB4 /* NSMutableArray+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4015D72AB400602AB4 /* NSObject+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4115D72AB400602AB4 /* NSObject+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4215D72AB400602AB4 /* NSString+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4315D72AB400602AB4 /* NSString+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4415D72AB400602AB4 /* UIColor+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4515D72AB400602AB4 /* UIColor+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4615D72AB400602AB4 /* UIImage+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4715D72AB400602AB4 /* UIImage+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4815D72AB400602AB4 /* UITableView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4915D72AB400602AB4 /* UITableView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4A15D72AB400602AB4 /* UIView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4B15D72AB400602AB4 /* UIView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZEN.m"; sourceTree = "<group>"; };
+		4F24FF4C15D72AB400602AB4 /* UIWebView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DZEN.h"; sourceTree = "<group>"; };
+		4F24FF4D15D72AB400602AB4 /* UIWebView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DZEN.m"; sourceTree = "<group>"; };
 		F504C892156E9B5C002842A1 /* libCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCloud.a; path = External/CloudAppSDK/Source/libCloud.a; sourceTree = "<group>"; };
 		F504C895156E9B99002842A1 /* CLAPIDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAPIDeserializer.h; sourceTree = "<group>"; };
 		F504C896156E9B99002842A1 /* CLAPIDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAPIDeserializer.m; sourceTree = "<group>"; };
@@ -244,27 +265,6 @@
 		F56BAE501550B5AB0058B1D2 /* logo_skydrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_skydrive.png; sourceTree = "<group>"; };
 		F56BAE511550B5AB0058B1D2 /* logo_skydrive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_skydrive@2x.png"; sourceTree = "<group>"; };
 		F5C83B29154EED7A00456D08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F5D8FCA4156E9A6F0007D484 /* DZCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCategories.h; sourceTree = "<group>"; };
-		F5D8FCA5156E9A6F0007D484 /* NSArray+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCA6156E9A6F0007D484 /* NSArray+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCA7156E9A6F0007D484 /* NSDate+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCA8156E9A6F0007D484 /* NSDate+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCA9156E9A6F0007D484 /* NSMutableArray+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCAA156E9A6F0007D484 /* NSMutableArray+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCAB156E9A6F0007D484 /* NSObject+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCAC156E9A6F0007D484 /* NSObject+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCAD156E9A6F0007D484 /* NSString+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCAE156E9A6F0007D484 /* NSString+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCAF156E9A6F0007D484 /* UIColor+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCB0156E9A6F0007D484 /* UIColor+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCB1156E9A6F0007D484 /* UIImage+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCB2156E9A6F0007D484 /* UIImage+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCB3156E9A6F0007D484 /* UITableView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCB4156E9A6F0007D484 /* UITableView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCB5156E9A6F0007D484 /* UIView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCB6156E9A6F0007D484 /* UIView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZEN.m"; sourceTree = "<group>"; };
-		F5D8FCB7156E9A6F0007D484 /* UIWebView+DZEN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DZEN.h"; sourceTree = "<group>"; };
-		F5D8FCB8156E9A6F0007D484 /* UIWebView+DZEN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DZEN.m"; sourceTree = "<group>"; };
 		F5D8FCC4156E9A8A0007D484 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = External/Reachability/Reachability.h; sourceTree = "<group>"; };
 		F5D8FCC5156E9A8A0007D484 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = External/Reachability/Reachability.m; sourceTree = "<group>"; };
 		F5D8FCC7156E9B2C0007D484 /* LiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiveSDK.framework; path = External/MSLiveSDK/bin/LiveSDK.framework; sourceTree = "<group>"; };
@@ -309,6 +309,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F24FF3715D72AB400602AB4 /* DZEN_Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4F24FF3915D72AB400602AB4 /* DZCategories.h */,
+				4F24FF3A15D72AB400602AB4 /* NSArray+DZEN.h */,
+				4F24FF3B15D72AB400602AB4 /* NSArray+DZEN.m */,
+				4F24FF3C15D72AB400602AB4 /* NSDate+DZEN.h */,
+				4F24FF3D15D72AB400602AB4 /* NSDate+DZEN.m */,
+				4F24FF3E15D72AB400602AB4 /* NSMutableArray+DZEN.h */,
+				4F24FF3F15D72AB400602AB4 /* NSMutableArray+DZEN.m */,
+				4F24FF4015D72AB400602AB4 /* NSObject+DZEN.h */,
+				4F24FF4115D72AB400602AB4 /* NSObject+DZEN.m */,
+				4F24FF4215D72AB400602AB4 /* NSString+DZEN.h */,
+				4F24FF4315D72AB400602AB4 /* NSString+DZEN.m */,
+				4F24FF4415D72AB400602AB4 /* UIColor+DZEN.h */,
+				4F24FF4515D72AB400602AB4 /* UIColor+DZEN.m */,
+				4F24FF4615D72AB400602AB4 /* UIImage+DZEN.h */,
+				4F24FF4715D72AB400602AB4 /* UIImage+DZEN.m */,
+				4F24FF4815D72AB400602AB4 /* UITableView+DZEN.h */,
+				4F24FF4915D72AB400602AB4 /* UITableView+DZEN.m */,
+				4F24FF4A15D72AB400602AB4 /* UIView+DZEN.h */,
+				4F24FF4B15D72AB400602AB4 /* UIView+DZEN.m */,
+				4F24FF4C15D72AB400602AB4 /* UIWebView+DZEN.h */,
+				4F24FF4D15D72AB400602AB4 /* UIWebView+DZEN.m */,
+			);
+			name = DZEN_Categories;
+			path = External/DZEN_Categories;
+			sourceTree = "<group>";
+		};
 		F504C890156E9B4C002842A1 /* CloudAppSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,7 +610,7 @@
 		F55273FE156D7E8B0087D678 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F5D8FCA2156E9A6F0007D484 /* DZEN_Categories */,
+				4F24FF3715D72AB400602AB4 /* DZEN_Categories */,
 				F5D8FCC4156E9A8A0007D484 /* Reachability.h */,
 				F5D8FCC5156E9A8A0007D484 /* Reachability.m */,
 				F55CB0C31573063100897C19 /* TableViewPullRefresh */,
@@ -627,35 +656,6 @@
 				F50F7BB3153CF1B900C14D7B /* ViewController_iPad.xib */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		F5D8FCA2156E9A6F0007D484 /* DZEN_Categories */ = {
-			isa = PBXGroup;
-			children = (
-				F5D8FCA4156E9A6F0007D484 /* DZCategories.h */,
-				F5D8FCA5156E9A6F0007D484 /* NSArray+DZEN.h */,
-				F5D8FCA6156E9A6F0007D484 /* NSArray+DZEN.m */,
-				F5D8FCA7156E9A6F0007D484 /* NSDate+DZEN.h */,
-				F5D8FCA8156E9A6F0007D484 /* NSDate+DZEN.m */,
-				F5D8FCA9156E9A6F0007D484 /* NSMutableArray+DZEN.h */,
-				F5D8FCAA156E9A6F0007D484 /* NSMutableArray+DZEN.m */,
-				F5D8FCAB156E9A6F0007D484 /* NSObject+DZEN.h */,
-				F5D8FCAC156E9A6F0007D484 /* NSObject+DZEN.m */,
-				F5D8FCAD156E9A6F0007D484 /* NSString+DZEN.h */,
-				F5D8FCAE156E9A6F0007D484 /* NSString+DZEN.m */,
-				F5D8FCAF156E9A6F0007D484 /* UIColor+DZEN.h */,
-				F5D8FCB0156E9A6F0007D484 /* UIColor+DZEN.m */,
-				F5D8FCB1156E9A6F0007D484 /* UIImage+DZEN.h */,
-				F5D8FCB2156E9A6F0007D484 /* UIImage+DZEN.m */,
-				F5D8FCB3156E9A6F0007D484 /* UITableView+DZEN.h */,
-				F5D8FCB4156E9A6F0007D484 /* UITableView+DZEN.m */,
-				F5D8FCB5156E9A6F0007D484 /* UIView+DZEN.h */,
-				F5D8FCB6156E9A6F0007D484 /* UIView+DZEN.m */,
-				F5D8FCB7156E9A6F0007D484 /* UIWebView+DZEN.h */,
-				F5D8FCB8156E9A6F0007D484 /* UIWebView+DZEN.m */,
-			);
-			name = DZEN_Categories;
-			path = External/DZEN_Categories;
 			sourceTree = "<group>";
 		};
 		F5E1B3F1153CFE9300B46440 /* SDKs */ = {
@@ -794,16 +794,6 @@
 				F5E1B434153D071400B46440 /* DZAlertCenter.m in Sources */,
 				F5EA1CB8153E85B900C6EDD2 /* DZDocument.m in Sources */,
 				F53F0D7A1554A4E8001CFF8C /* DZServicesManager.m in Sources */,
-				F5D8FCBA156E9A6F0007D484 /* NSArray+DZEN.m in Sources */,
-				F5D8FCBB156E9A6F0007D484 /* NSDate+DZEN.m in Sources */,
-				F5D8FCBC156E9A6F0007D484 /* NSMutableArray+DZEN.m in Sources */,
-				F5D8FCBD156E9A6F0007D484 /* NSObject+DZEN.m in Sources */,
-				F5D8FCBE156E9A6F0007D484 /* NSString+DZEN.m in Sources */,
-				F5D8FCBF156E9A6F0007D484 /* UIColor+DZEN.m in Sources */,
-				F5D8FCC0156E9A6F0007D484 /* UIImage+DZEN.m in Sources */,
-				F5D8FCC1156E9A6F0007D484 /* UITableView+DZEN.m in Sources */,
-				F5D8FCC2156E9A6F0007D484 /* UIView+DZEN.m in Sources */,
-				F5D8FCC3156E9A6F0007D484 /* UIWebView+DZEN.m in Sources */,
 				F5D8FCC6156E9A8A0007D484 /* Reachability.m in Sources */,
 				F504CB51156E9B9A002842A1 /* CLAPIDeserializer.m in Sources */,
 				F504CB52156E9B9A002842A1 /* CLAPISerializer.m in Sources */,
@@ -833,6 +823,16 @@
 				F504CC64156E9B9A002842A1 /* SBJsonWriter.m in Sources */,
 				F55A00C5156EE31400DB3760 /* DZServiceTableViewCell.m in Sources */,
 				F55CB0FC1573063100897C19 /* EGORefreshTableHeaderView.m in Sources */,
+				4F24FF4F15D72AB400602AB4 /* NSArray+DZEN.m in Sources */,
+				4F24FF5015D72AB400602AB4 /* NSDate+DZEN.m in Sources */,
+				4F24FF5115D72AB400602AB4 /* NSMutableArray+DZEN.m in Sources */,
+				4F24FF5215D72AB400602AB4 /* NSObject+DZEN.m in Sources */,
+				4F24FF5315D72AB400602AB4 /* NSString+DZEN.m in Sources */,
+				4F24FF5415D72AB400602AB4 /* UIColor+DZEN.m in Sources */,
+				4F24FF5515D72AB400602AB4 /* UIImage+DZEN.m in Sources */,
+				4F24FF5615D72AB400602AB4 /* UITableView+DZEN.m in Sources */,
+				4F24FF5715D72AB400602AB4 /* UIView+DZEN.m in Sources */,
+				4F24FF5815D72AB400602AB4 /* UIWebView+DZEN.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

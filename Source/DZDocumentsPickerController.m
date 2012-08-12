@@ -112,6 +112,8 @@
             pickerController.navigationItem.rightBarButtonItems = nil;
             pickerController.navigationBar.tintColor = [UIColor blackColor];
             //[pickerController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar_Pattern.png"] forBarMetrics:UIBarMetricsDefault];
+            [[UIApplication sharedApplication] setStatusBarHidden:YES];
+            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
             
             if (self.documentType == DocumentTypeImages)
             {
@@ -140,9 +142,7 @@
             }
             */
             
-            pickerController.allowsEditing = allowEditing;
-            pickerController.delegate = self;
-            //pickerController.navigationBarHidden = YES;
+            
             
             [navigationController setViewControllers:[NSArray arrayWithObject:pickerController]];
         }
@@ -504,13 +504,16 @@
     tableVC.tableView.delegate = self;
     tableVC.tableView.dataSource = self;
     
-    CGRect rect = CGRectMake(0.0f, 0.0f - tableVC.tableView.bounds.size.height,
-                             self.view.frame.size.width, tableVC.tableView.bounds.size.height);
-    EGORefreshTableHeaderView *headerView = [[EGORefreshTableHeaderView alloc] initWithFrame:rect andStyle:HeaderStyleLightGray];
-    headerView.delegate = self;
-    [tableVC.tableView addSubview:headerView];
-    refreshHeaderView = headerView;
-    [refreshHeaderView refreshLastUpdatedDate];
+    if ([segmentedItems objectAtIndex:currentSegment] != [segmentedItems lastObject] && [depthLevel intValue] > 0)
+    {
+        CGRect rect = CGRectMake(0.0f, 0.0f - tableVC.tableView.bounds.size.height,
+                                 self.view.frame.size.width, tableVC.tableView.bounds.size.height);
+        EGORefreshTableHeaderView *headerView = [[EGORefreshTableHeaderView alloc] initWithFrame:rect andStyle:HeaderStyleLightGray];
+        headerView.delegate = self;
+        [tableVC.tableView addSubview:headerView];
+        refreshHeaderView = headerView;
+        [refreshHeaderView refreshLastUpdatedDate];
+    }
     
     return tableVC;
 }
@@ -650,10 +653,14 @@
             NSLog(@"PopItem && depthLevel = %d",[depthLevel intValue]);
             NSLog(@"[cloudFilesDict count] = %d",[cloudFilesDict count]);
             
-            NSArray *arr = [cloudPath componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/"]];
-            NSRange rangeOfSubstring = [cloudPath rangeOfString:[arr lastObject]];
-            if(rangeOfSubstring.location != NSNotFound)
-                cloudPath = [cloudPath substringToIndex:rangeOfSubstring.location];
+            if ([depthLevel intValue] > 1)
+            {
+                NSArray *arr = [cloudPath componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/"]];
+                NSRange rangeOfSubstring = [cloudPath rangeOfString:[arr lastObject]];
+                if(rangeOfSubstring.location != NSNotFound)
+                    cloudPath = [cloudPath substringToIndex:rangeOfSubstring.location];
+                else cloudPath = @"/";
+            }
             else cloudPath = @"/";
             
             UITableViewController *tableVC = (UITableViewController *)[navController.viewControllers safeObjectAtIndex:[depthLevel intValue]];
@@ -665,11 +672,18 @@
                 }
             }
             
+            if ([depthLevel intValue] == 0)
+            {
+                [refreshHeaderView removeFromSuperview];
+                refreshHeaderView = nil;
+            }
+            
             NSLog(@"cloudPath = %@",cloudPath);
         }
         else NSLog(@"PushItem");
     }
     
+    /*
     for (UIView *view in viewController.view.subviews)
     {
         if ([view isKindOfClass:[UITableView class]])
@@ -679,6 +693,7 @@
             for (int i = 0; i < [selectedRows count]; i++) [aTable deselectRowAtIndexPath:[selectedRows objectAtIndex:i] animated:YES];
         }
     }
+     */
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated

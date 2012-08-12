@@ -28,7 +28,6 @@
 
 - (void)startDropboxSession;
 
-
 - (id)getSettingsForObjectForKey:(NSString *)objKey;
 
 @end

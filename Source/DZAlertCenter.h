@@ -23,6 +23,8 @@
 @property (nonatomic, strong) NSString *secondAction;
 @property (nonatomic, strong) UIProgressView *uploadProgressView;
 
++ (DZAlertCenter *)sharedCenter;
++ (void)setSharedCenter:(DZAlertCenter *)center;
 
 - (void)alertWithTitle:(NSString *)title message:(NSString *)mssg cancelButtonTitle:(NSString *)cancelTitle withTarget:(id)target andSingleAction:(NSString *)selector;
 
@@ -30,20 +32,10 @@
 
 - (void)loginActionAlertWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelTitle actionButtonTitle:(NSString *)actionTitle withTarget:(id)target andActions:(NSArray *)someSelectors;
 
-- (void)closeAlertView;
-
-
-
 - (void)noActionAlertWithTitle:(NSString *)title withMessage:(NSString *)mssg withCancelButton:(NSString *)btnTitle;
-
-- (void)singleActionAlertWithTitle:(NSString *)title withMessage:(NSString *)mssg withCancelButton:(NSString *)btnTitle1 withApprovalButton:(NSString *)btnTitle2 withAction:(NSString *)notificationName;
-
-- (void)loadingActionAlertWithTitle:(NSString *)title withMessage:(NSString *)mssg withCancelButton:(NSString *)btnTitle1 andWithAction:(NSString *)notificationName;
-
-- (void)noActionloadingnAlertWithTitle:(NSString *)title withMessage:(NSString *)mssg;
 
 - (void)noInternetConnectionAlert;
 
-
+- (void)closeAlertView;
 
 @end
