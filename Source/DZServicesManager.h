@@ -12,19 +12,16 @@
 #import "AppDelegate.h"
 
 #import <DropboxSDK/DropboxSDK.h>
-#import "Cloud.h"
-#import <LiveSDK/LiveConnectClient.h>
 
 #import "DZDocument.h"
 #import "DZAlertCenter.h"
 
-typedef enum {ServiceTypeDropbox, ServiceTypeCloudApp, ServiceTypeiCloud, ServiceTypeGoogleDrive, ServiceTypeSkyDrive, ServiceTypeSugarSync,ServiceTypeBOX} ServiceType;
-NSString *const ServicesTypeArr[7];
+typedef enum {ServiceTypeDropbox} ServiceType;
+NSString *const ServicesTypeArr[1];
 
 @protocol DZServicesManagerDelegate;
 
-@interface DZServicesManager : NSObject <DBRestClientDelegate, CLAPIEngineDelegate,
-                                            LiveAuthDelegate, LiveOperationDelegate,
+@interface DZServicesManager : NSObject <DBRestClientDelegate,
                                             NSURLConnectionDelegate>
 {
     DZAlertCenter *alrtCenter;
@@ -41,8 +38,6 @@ NSString *const ServicesTypeArr[7];
 @property (nonatomic, assign) ServiceType currentService;
 
 @property (nonatomic, copy) DBRestClient *dropboxClient;
-@property (nonatomic, copy) CLAPIEngine *cloudappClient;
-@property (nonatomic, copy) LiveConnectClient *skydriveClient;
 
 @property (nonatomic, strong) UIViewController *parentViewController;
 

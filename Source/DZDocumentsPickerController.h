@@ -21,6 +21,7 @@
 #import <dispatch/dispatch.h>
 #import "Reachability.h"
 
+
 @protocol DZDocumentsPickerControllerDelegate;
 
 enum DevicesType {DeviceTypeiPod = 0, DeviceTypeiPhone = 1, DeviceTypeiPad = 2};
@@ -32,19 +33,19 @@ typedef enum DevicesType DeviceType;
 {
     AppDelegate *appDelegate;
     DZAlertCenter *alrtCenter;
-    
+
     EGORefreshTableHeaderView *refreshHeaderView;
-    
+
     UINavigationController *navigationController;
     UINavigationController *navController;
     UITableViewController *tableController;
     NSMutableArray *segmentedItems;
-        
+
     int currentSegment;
     BOOL isReloading;
     BOOL isDownloading;
     NSNumber *depthLevel;
-    
+
     NSTimer *docsTimer;
 }
 
@@ -63,6 +64,8 @@ typedef enum DevicesType DeviceType;
 @property (nonatomic, strong) NSMutableDictionary *cloudFilesDict;
 
 @property (nonatomic, strong) Reachability *netReach;
+
+@property (nonatomic, strong) UIPopoverController *popOverController;
 
 - (void)segmentAction:(id)sender;
 - (void)cancelPicker:(id)sender;
